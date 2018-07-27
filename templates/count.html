@@ -1,0 +1,19 @@
+
+<h1>start again</h1>
+<a href="{% url 'home' %}">Start again</a><br>
+<h1>About</h1>
+<a href="{% url 'about' %}">About</a>
+<br>
+
+
+<H1>Your Text </H1>
+{{ fulltext}}
+
+ <H1>Word Dictionary</H1>
+
+{% for word , counttotal in sortedwords %}
+
+    {{ word }} -  {{ counttotal }}
+    <br>
+
+{% endfor %}
